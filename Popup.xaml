@@ -1,0 +1,22 @@
+<UserControl x:Class="ClearCookies.ClearCookiesPopup"
+			 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+			 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+			 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+			 xmlns:local="clr-namespace:ClearCookies"
+			 mc:Ignorable="d"
+			 d:DesignHeight="400" d:DesignWidth="600">
+	<UserControl.Resources>
+		<Style TargetType="TextBlock" BasedOn="{StaticResource BaseTextBlockStyle}" />
+	</UserControl.Resources>
+	<DockPanel Margin="20" FocusManager.FocusedElement="{Binding ElementName=Input}">
+		<StackPanel DockPanel.Dock="Bottom" Orientation="Horizontal" VerticalAlignment="Bottom" HorizontalAlignment="Right">
+			<Button Content="{DynamicResource LOCCancelLabel}" IsCancel="True"  Margin="0,0,20,0" />
+			<Button Name="ConfirmButton" Content="{DynamicResource LOCConfirmLabel}" IsDefault="True" />
+		</StackPanel>
+		<DockPanel Margin="0,0,0,20">
+			<TextBlock DockPanel.Dock="Top" Text="{DynamicResource LOCClearCookiesInstruction}" TextWrapping="Wrap" Margin="0,0,0,5" />
+			<TextBox Name="Input" AcceptsReturn="True" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" />
+		</DockPanel>
+	</DockPanel>
+</UserControl>
