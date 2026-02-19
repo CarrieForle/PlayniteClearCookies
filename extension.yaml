@@ -5,6 +5,8 @@ Version: 1.0
 Module: ClearCookies.dll
 Type: GenericPlugin
 Icon: icon.png
-Likns:
+Links:
   - Name: GitHub
-    Url: https://github.com/CarrieForle/PlayniteClearCookies  
+    Url: https://github.com/CarrieForle/PlayniteClearCookies
+  - Name: Icon Designed by Freepik
+    Url: https://www.freepik.com/
